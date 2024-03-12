@@ -1,9 +1,12 @@
 // Task 1: Implement a function that calculates total coffees sold
+let sales = [ 0.99, 1.24, 1.99];
+
 function totalCoffeesSold(){
-    let sales = [];
     // Calculate the total coffees sold by summing up a sales array
     return sales.reduce((a, b) => a+b, 0);
 }
+
+console.log(totalCoffeesSold());
 
 // Task 2: Implement a function to filter out decaf coffees from a list of coffee options
     // Use the filter method to filter out decaf coffee options
