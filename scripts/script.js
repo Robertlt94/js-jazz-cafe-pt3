@@ -6,7 +6,7 @@ function totalCoffeesSold(){
     return sales.reduce((a, b) => a+b, 0);
 }
 
-console.log(totalCoffeesSold());
+console.log("total coffee sales so far: $", totalCoffeesSold());
 
 // Task 2: Implement a function to filter out decaf coffees from a list of coffee options
     // Use the filter method to filter out decaf coffee options
