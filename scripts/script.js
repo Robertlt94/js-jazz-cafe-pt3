@@ -38,13 +38,19 @@ class JazzCoffeeRoasters{
     };
 }
 
+let columbianCoffee = new JazzCoffeeRoasters("Columbian");
+console.log(columbianCoffee);
+
 // Task 4: Extend the Jazz Coffee Roaster class for Specialty Coffee Roasters
 class SpecialtyCoffeeRoasters extends JazzCoffeeRoasters{
-    constructor(coffeeType, speacilty = true){
+    constructor(coffeeType, specialty = true){
         super(coffeeType);
         this.specialty = specialty;
     };
 };
+
+let monthlySpecial = new SpecialtyCoffeeRoasters("Mixed Blend", true);
+console.log(monthlySpecial);
 
 // Task 5: Create a custom constructor function for Jazz Coffee Blends
 function JazzCoffeeBlends(blend, decaf){
